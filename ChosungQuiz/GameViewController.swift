@@ -97,6 +97,7 @@ class GameViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func buttonClick(_ sender: UIButton) {
+        // 게임이 종료되지 않은 경우
         if (i<answerArray.count) {
         // 패스 버튼을 눌렀을 때
             if (sender==passButton) {
