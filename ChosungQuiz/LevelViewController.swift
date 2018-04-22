@@ -24,8 +24,8 @@ class LevelViewController: UIViewController {
         super.viewDidLoad()
         
         levelName = "Easy"
-        categoryTitle.text = "카테고리 : " + categoryName
-        levelTitle.text = "난이도 : " + levelName
+        categoryTitle.text = categoryName
+        levelTitle.text = levelName
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,7 +38,7 @@ class LevelViewController: UIViewController {
     }
     
     @IBAction func okButtonClick(_ sender: Any) {
-        levelTitle.text! = "난이도 : " + levelName
+        levelTitle.text! = levelName
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -8,9 +8,10 @@
 
 import UIKit
 
-class NameViewController: UIViewController {
+class NameViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var nameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,13 +23,17 @@ class NameViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool { textField.resignFirstResponder()
+        return true
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toCategoryView" {
-            let destVC = segue.destination as! CategoryViewController
-            let userName: String! = nameTextField.text!
+                let destVC = segue.destination as! CategoryViewController
+                let userName: String! = nameTextField.text!
             
-            destVC.title = "카테고리"
-            destVC.userName = userName
-        } }
-
+                destVC.title = "카테고리"
+                destVC.userName = userName
+        }
+    }
 }

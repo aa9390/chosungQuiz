@@ -32,7 +32,7 @@ class CategoryViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
     
     @IBAction func okButtonClick(_ sender: Any) {
         categoryName = categoryArray[self.categoryPicker.selectedRow(inComponent: 0)]
-        categoryTitle.text = "카테고리 : " + categoryName
+        categoryTitle.text = categoryName
     }
     
     
@@ -51,7 +51,7 @@ class CategoryViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
         super.viewDidLoad()
 
         categoryName = categoryArray[0]
-        categoryTitle.text = "카테고리 : " + categoryName
+        categoryTitle.text = categoryName
     }
 
     override func didReceiveMemoryWarning() {

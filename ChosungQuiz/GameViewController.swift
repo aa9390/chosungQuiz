@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameViewController: UIViewController {
+class GameViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var categoryTitle: UILabel!
     @IBOutlet var levelTitle: UILabel!
     @IBOutlet var infoLabel: UILabel!
@@ -87,14 +87,20 @@ class GameViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool { textField.resignFirstResponder()
+        return true
+    }
 
     @IBAction func buttonClick(_ sender: UIButton) {
         if (i<answerArray.count) {
         // 패스 버튼을 눌렀을 때
             if (sender==passButton) {
+                hintView.isHidden = true
                 score = score - 15
                 scoreString! = String(score!)
                 infoLabel.text = userName + "님의 점수 : " + scoreString + "점"
+                progressBar.progress += 0.2
 
                 // 다음 초성으로 이동
                 i = i + 1
@@ -109,6 +115,8 @@ class GameViewController: UIViewController {
             
         // 정답 버튼을 눌렀을 때
             if (sender==okButton) {
+                hintView.isHidden = true
+                
                 // 정답을 입력하지 않았을 때
                 if (inputTextField.text == "") {}
                     
