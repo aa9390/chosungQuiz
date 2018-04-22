@@ -11,6 +11,7 @@
 		CD4EF0AB208C5821000D4F11 /* checkBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CD4EF0AA208C5820000D4F11 /* checkBtn.png */; };
 		CD8819B8208C75EA00D0F476 /* startBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8819B6208C75E900D0F476 /* startBtn.png */; };
 		CD8819B9208C75EB00D0F476 /* nextBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8819B7208C75EA00D0F476 /* nextBtn.png */; };
+		CD8819BD208C944F00D0F476 /* app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8819BC208C944E00D0F476 /* app_icon.png */; };
 		CDC3DFB7208B044800695204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DFB6208B044800695204 /* AppDelegate.swift */; };
 		CDC3DFB9208B044800695204 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3DFB8208B044800695204 /* ViewController.swift */; };
 		CDC3DFBC208B044800695204 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC3DFBA208B044800695204 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		CD4EF0AA208C5820000D4F11 /* checkBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBtn.png; sourceTree = "<group>"; };
 		CD8819B6208C75E900D0F476 /* startBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startBtn.png; sourceTree = "<group>"; };
 		CD8819B7208C75EA00D0F476 /* nextBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextBtn.png; sourceTree = "<group>"; };
+		CD8819BC208C944E00D0F476 /* app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon.png; sourceTree = "<group>"; };
 		CDC3DFB3208B044800695204 /* ChosungQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChosungQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC3DFB6208B044800695204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDC3DFB8208B044800695204 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		CDC3DFB5208B044800695204 /* ChosungQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				CD8819BC208C944E00D0F476 /* app_icon.png */,
 				CD8819B7208C75EA00D0F476 /* nextBtn.png */,
 				CD8819B6208C75E900D0F476 /* startBtn.png */,
 				CD4EF0AA208C5820000D4F11 /* checkBtn.png */,
@@ -148,6 +151,7 @@
 				CDC3DFC1208B044800695204 /* LaunchScreen.storyboard in Resources */,
 				CD4EF0A9208C57FC000D4F11 /* Assets.xcassets in Resources */,
 				CD8819B8208C75EA00D0F476 /* startBtn.png in Resources */,
+				CD8819BD208C944F00D0F476 /* app_icon.png in Resources */,
 				CDC3DFBC208B044800695204 /* Main.storyboard in Resources */,
 				CD8819B9208C75EB00D0F476 /* nextBtn.png in Resources */,
 			);
