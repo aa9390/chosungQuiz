@@ -27,8 +27,9 @@ class GameViewController: UIViewController, UITextFieldDelegate {
     var levelName: String!
     var score: Int! = 0
     var scoreString: String!
-    var i: Int! = 0
+    var i: Int! = 0 // 배열의 인덱스에 관련된 변수
     
+    // 초성, 정답, 힌트 배열 초기화
     var chosungArray: [String] = []
     var answerArray: [String] = []
     var hintArray: [String] = []
@@ -36,6 +37,7 @@ class GameViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 상단 view 초기화
         scoreString = String(score)
         indicatorView.startAnimating()
         categoryTitle.text = "카테고리 : " + categoryName
@@ -65,7 +67,7 @@ class GameViewController: UIViewController, UITextFieldDelegate {
             else if (levelName=="Hard") {
                 chosungArray = ["ㅇㅈㅇ", "ㅎㄹㅇㄷㅊㅋ", "ㅋㅈㅂ", "ㅇㅁㄹㅇㅅ", "ㅇㅅㅅ"]
                 answerArray = ["오징어", "후라이드치킨", "콩자반", "오므라이스", "옥수수"]
-                hintArray = ["휴게소에서 먹어야 제맛", "어린아이들은 싫어해요", "언제나 옳다", "밥위에 계란을", "수염차"]
+                hintArray = ["휴게소에서 먹어야 제맛", "언제나 옳다", "어린아이들은 싫어해요", "밥위에 계란을", "수염차"]
             }
         case "사자성어":
             if (levelName=="Easy") {
@@ -80,6 +82,8 @@ class GameViewController: UIViewController, UITextFieldDelegate {
             }
         default: break
         }
+        
+        // 화면 진입 시 초성 배열의 첫 항이 보이도록
         chosungLabel.text = chosungArray[i]
     }
 

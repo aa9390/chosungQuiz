@@ -12,8 +12,8 @@ class CategoryViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
     @IBOutlet var categoryPicker: UIPickerView!
     @IBOutlet var categoryTitle: UILabel!
     @IBOutlet var levelTitle: UILabel!
-
     @IBOutlet var okButton: UIButton!
+    
     var userName: String!
     var categoryName: String!
     let categoryArray: [String] = ["영화", "음식", "사자성어"]
@@ -45,7 +45,8 @@ class CategoryViewController: UIViewController,UIPickerViewDelegate, UIPickerVie
             destVC.title = "난이도"
             destVC.userName = userName
             destVC.categoryName = categoryName
-        } }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -25,7 +25,8 @@ class ViewController: UIViewController {
             let destVC = segue.destination as! NameViewController
             
             destVC.title = "이름"
-        } }
+        }
+    }
 
 }
 

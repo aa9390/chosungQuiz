@@ -12,7 +12,6 @@ class LevelViewController: UIViewController {
 
     @IBOutlet var categoryTitle: UILabel!
     @IBOutlet var levelTitle: UILabel!
-    
     @IBOutlet var levelSegment: UISegmentedControl!
     @IBOutlet var okButton: UIButton!
     
@@ -52,6 +51,7 @@ class LevelViewController: UIViewController {
             destVC.userName = userName
             destVC.categoryName = categoryName
             destVC.levelName = levelName
-        } }
+        }
+    }
     
 }
